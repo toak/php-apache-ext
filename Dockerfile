@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
         zlib1g-dev \
         libxml2-dev \
         libzip-dev \
+        libonig-dev
 
 RUN docker-php-ext-install fileinfo
 RUN docker-php-ext-install iconv
