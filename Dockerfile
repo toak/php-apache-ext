@@ -8,7 +8,7 @@ RUN apt-get update -y && \
         libpng-dev \
         libjpeg62-turbo-dev
 
-RUN docker-php-ext-configure gd --with-jpeg=/usr/include/
+RUN docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/freetype2
 RUN docker-php-ext-install gd exif
 
 RUN docker-php-ext-install mysqli
