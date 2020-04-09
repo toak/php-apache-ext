@@ -4,7 +4,7 @@ RUN a2enmod rewrite
 
 RUN apt-get update -y && \
     apt-get install -y \
-        git libc-client-dev libkrb5-dev
+        git libc-client-dev libkrb5-dev libonig-dev zip
 
 RUN docker-php-ext-configure imap --with-imap --with-imap-ssl --with-kerberos && \
     docker-php-ext-install imap && \
