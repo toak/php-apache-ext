@@ -16,4 +16,4 @@ RUN docker-php-ext-install bcmath
 RUN curl -s https://getcomposer.org/installer | php
 
 RUN php composer.phar require hubspot/hubspot-php
-RUN php composer.phar require tedivm/fetch
+RUN php composer.phar require ddeboer/imap
