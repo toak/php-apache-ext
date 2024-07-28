@@ -8,4 +8,4 @@ RUN docker-php-ext-install bcmath
 
 RUN apt-get update -y && \
     apt-get install -y \
-        git
+        git gh
